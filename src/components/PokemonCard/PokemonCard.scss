@@ -1,0 +1,41 @@
+.pokemon-card {
+  $pokemonCard: &;
+
+  border-radius: 8px;
+  background-color: #f5f5f5;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.06);
+  }
+
+  &__name {
+    background-color: #282c34;
+    border-radius: 0 0 8px 8px;
+    color: #f5f5f5;
+    font-weight: 700;
+    padding: 2px 0;
+    font-size: 12px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__types {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__type {
+    margin: 4px;
+    padding: 0 4px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    font-size: 9px;
+    color: #f5f5f5;
+  }
+}

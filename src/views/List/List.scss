@@ -1,0 +1,15 @@
+.pokemon-list {
+  padding: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .pokemon-card {
+    max-width: 130px;
+  }
+
+  &__loader {
+    margin: auto;
+    display: block;
+  }
+}
