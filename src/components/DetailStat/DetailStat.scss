@@ -1,0 +1,36 @@
+.progress {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+
+  & > :first-child {
+    display: flex;
+    margin-bottom: 5px;
+  }
+
+  &__label {
+    flex: 1 1;
+    margin-right: 10px;
+    color: #4a5568;
+  }
+
+  &__value {
+    flex: none;
+  }
+
+  &__bar {
+    height: 8px;
+    border-radius: 5px;
+    width: 100%;
+    background-color: #cbd5e0;
+    position: relative;
+  }
+
+  &__bar-value {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+    border-radius: 5px;
+  }
+}
